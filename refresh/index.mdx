@@ -1,0 +1,58 @@
+---
+title: "Refresh"
+description: "The documentation for our drinks machine, Refresh."
+---
+
+Winter Refresh is an advanced drink serving machine. It has a couple of
+options available to configure.
+
+## Configuration
+
+By default, you shoud have this config:
+
+```lua
+return {
+    ["PourTime"] = 5, -- Total time each pour will take. NOTE: SFX will not update with this.
+    ["Debug"] = true, -- Logs certain things to the console. Reccomended to be false unless having issues.
+    ["LedFlash"] = true, -- Whether or not LED flashing is on. Decoration only.
+}
+```
+
+- `PourTime` - The total time each pour will take. The SFX will not update to match this.
+- `Debug` - Logs things to the console. Reccomended if having issues.
+- `LedFlash` - Decoration only. Controls the flashing of the LEDs on the front.
+
+## Adding Drinks
+
+To add drinks, please look inside: `Screen > Screen > SurfaceGui > Wrapper > Drinks > DrinksGrid`
+
+Duplicate one of the existing drinks. Drink name is taken from
+the name of the button. The drink colour is an attribute called `DrinkColour`,
+on each button. You will need to create an image.
+
+<Warning>
+    The button needs to be an ImageButton. This script does not support TextButtons.
+</Warning>
+
+## Changelog
+
+### v1.1 - 18/03/2025
+
+**UI Changes**
+
+- Updated drink selector to use images to be more realistic ||Idea courtesy of @oryndel||
+- Updated fill background to match drink colour
+- Updated button colours to be more consistent with Winter's branding.
+
+**Model Changes**
+
+- Changed logo colour on the top of the model to be white
+- Added logo to the front of the machine
+- Added 2 blinking LEDs to the front. Can be turned off in the configuration.
+
+**Bug Fixes**
+
+- Fixed bug with back button not resetting the machine correctly
+- Fixed bug when clicking back button without a cup placed in the machine.
+
+The ZIP file provided includes all drink icons used in the model in a 128x128px size.
