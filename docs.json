@@ -11,7 +11,7 @@
     "navigation": {
         "tabs": [
             {
-                "tab": "Guides",
+                "tab": "Documentation",
                 "groups": [
                     {
                         "group": "Getting started",
@@ -61,9 +61,10 @@
     },
     "footer": {
         "socials": {
-            "x": "https://x.com/mintlify",
-            "github": "https://github.com/mintlify",
-            "linkedin": "https://linkedin.com/company/mintlify"
+            "x": "https://x.com/wintertechrblx",
+            "discord": "https://discord.gg/5T3DxxS9rT",
+            "github": "https://github.com/WinterTechnologies",
+            "website": "https://wintertech.xyz"
         }
     }
 }
